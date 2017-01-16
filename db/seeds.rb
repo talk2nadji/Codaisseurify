@@ -5,3 +5,44 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Song.delete_all
+Artist.delete_all
+
+artist1 = Artist.create( {name: "Drake", birth: '1986-10-24', gender: "m", img_url: "drake_img"} )
+artist2 = Artist.create( {name: "Justin Bieber", birth: '1994-03-01', gender: "m", img_url: "justin_img"} )
+artist3 = Artist.create( {name: "Bruno Mars", birth: '1985-10-08', gender: "m", img_url: "bruno_img"} )
+artist4 = Artist.create( {name: "Calum Scott", birth: '1988-10-12', gender: "m", img_url: "calum_img"} )
+artist5 = Artist.create( {name: "The Weeknd", birth: '1990-02-16', gender: "m", img_url: "weeknd_img"} )
+
+song1 = Song.create( {name: "One dance", time: 203} )
+song2 = Song.create( {name: "24K magic", time: 198} )
+song3 = Song.create( {name: "Dancing on my own", time: 220} )
+song4 = Song.create( {name: "Starboy", time: 180} )
+song5 = Song.create( {name: "I feel it coming", time: 192} )
+song6 = Song.create( {name: "What do you mean?", time: 210} )
+song7 = Song.create( {name: "Sorry", time: 200} )
+song8 = Song.create( {name: "Love yourself", time: 189} )
+song9 = Song.create( {name: "Treasure", time: 231} )
+
+artist1.songs << [song1]
+artist1.save
+
+artist2.songs << [song6]
+artist2.save
+artist2.songs << [song7]
+artist2.save
+artist2.songs << [song8]
+artist2.save
+
+artist3.songs << [song2]
+artist3.save
+artist3.songs << [song9]
+artist3.save
+
+artist4.songs << [song3]
+artist4.save
+
+artist5.songs << [song4]
+artist5.save
+artist5.songs << [song5]
+artist5.save
