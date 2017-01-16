@@ -27,22 +27,14 @@ song9 = Song.create( {name: "Treasure", time: 231} )
 artist1.songs << [song1]
 artist1.save
 
-artist2.songs << [song6]
-artist2.save
-artist2.songs << [song7]
-artist2.save
-artist2.songs << [song8]
+artist2.songs << [song6, song7, song8]
 artist2.save
 
-artist3.songs << [song2]
-artist3.save
-artist3.songs << [song9]
+artist3.songs << [song2, song9]
 artist3.save
 
 artist4.songs << [song3]
 artist4.save
 
-artist5.songs << [song4]
-artist5.save
-artist5.songs << [song5]
+artist5.songs << [song4, song5]
 artist5.save
