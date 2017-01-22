@@ -1,0 +1,9 @@
+<h1>Artists Overview Page</h1>
+<% @artists.each do |artist| %>
+  <p><%= artist.name %></p>
+<% end %>
+
+<p>Order by:
+<%= link_to "Name ASC", artists_path(order: 'artists_asc') %>
+<%= link_to "Name DESC", artists_path(order: 'artists_desc') %>
+</p>
