@@ -5,7 +5,7 @@
 <!-- add list songs -->
 <p>List of songs: </p>
 <% @artist.songs.each do |song| %>
-  <ul><%= song.name %></ul>
+  <ul><%= link_to '[Delete?]', [song.artist, song],method: :delete, data: {confirm: "Are you sure?"} %> &emsp; <%= song.name %></ul>
 <% end %>
 <!-- add birth, gender -->
 <p>Birth: <%= @artist.birth %></p>
