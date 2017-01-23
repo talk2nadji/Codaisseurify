@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'carrierwave', '0.11.2'
 gem 'cloudinary', '1.2.3'
+gem 'factory_girl_rails', '4.7.0'
+gem 'faker', '1.6.6'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
