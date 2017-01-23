@@ -1,10 +1,16 @@
 <h1><%= @artist.name %></h1>
+<p>Add new song:
+  <%= link_to "[Add]", new_artist_song_path(@artist) %>
+</p>
+<!-- add list songs -->
 <p>List of songs: </p>
 <% @artist.songs.each do |song| %>
   <ul><%= song.name %></ul>
 <% end %>
+<!-- add birth, gender -->
 <p>Birth: <%= @artist.birth %></p>
 <p>Gender: <%= @artist.gender %></p>
+<!-- add photo's with ImageUploader -->
 <p>Photo's:</p>
 <% @artist.photos.each do |photo| %>
   <%= image_tag photo.image %>
