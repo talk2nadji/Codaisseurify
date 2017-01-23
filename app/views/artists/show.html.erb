@@ -1,4 +1,9 @@
-<h1><%= @artist.name %></h1>
+<h1>
+  <%= link_to "[Delete?!]", @artist, method: :delete, data: { confirm: "Are you sure?"} %>
+  &emsp; 
+  <%= @artist.name %>
+</h1>
+
 <p>Add new song:
   <%= link_to "[Add]", new_artist_song_path(@artist) %>
 </p>
